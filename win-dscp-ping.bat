@@ -1,3 +1,4 @@
+REM Windows script to test DSCP markings
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
 ECHO. > dscp.txt
