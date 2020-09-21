@@ -10,5 +10,5 @@ FOR /L %%A IN (0, 1, 63) DO (
 SET /A tos = %%A * 4
 ECHO DSCP %%A ToS !tos! >> %FILE%
 PING -n 1 -v !tos! %SERVER% | FIND "TTL="
-IF ERRORLEVEL 1 ( ECHO Failed  >> dscp.txt ) ELSE ( ECHO Passed  >> %FILE% )
+IF ERRORLEVEL 1 ( ECHO Failed  >> %FILE% ) ELSE ( ECHO Passed  >> %FILE% )
 ECHO. >> %FILE%)
